@@ -14,7 +14,7 @@ export default function Sectors() {
         lede="From gold and gemstones to gypsum, battery minerals and petroleum blocks: the opportunities we help companies access in Somaliland."
         image={oreGoldImg}
         imageAlt="Close-up of host rock with veins of gold and pale quartz."
-        position="60% 40%"
+        imageVariant="sectors"
         crumbs={[{ label: 'Sectors' }]}
       />
       <SectorsTable />

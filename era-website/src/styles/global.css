@@ -175,6 +175,10 @@ em .amp{padding:0 .04em}
 .page-hero__lede{max-width:560px;font-size:clamp(17px,1.35vw,19px);margin:22px 0 0}
 .page-hero__img{position:relative;aspect-ratio:4/3;box-shadow:var(--shadow)}
 .page-hero__img img{width:100%;height:100%;object-fit:cover}
+.page-hero__img--contain img{object-fit:contain;background:#fff}
+.page-hero__img--about img{object-position:55% 40%}
+.page-hero__img--process img{object-position:30% 70%}
+.page-hero__img--sectors img{object-position:60% 40%}
 .page-hero__img::after{content:"";position:absolute;right:-14px;bottom:-14px;width:46%;height:46%;border-right:2px solid var(--gold-deco);border-bottom:2px solid var(--gold-deco);pointer-events:none}
 .crumbs ol{list-style:none;margin:0 0 24px;padding:0;display:flex;flex-wrap:wrap;gap:6px 0;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .crumbs li+li::before{content:"/";margin:0 12px;color:var(--gold-deco)}

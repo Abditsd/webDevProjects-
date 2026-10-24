@@ -14,7 +14,7 @@ export default function Process() {
         lede="Enquiry, opportunity matching, site visit and due diligence, licensing and government liaison, then investment and ongoing support."
         image={explorationDuskImg}
         imageAlt="Exploration rig silhouetted against hills at dusk."
-        position="30% 70%"
+        imageVariant="process"
         crumbs={[{ label: 'Process' }]}
       />
       <ProcessLog />

@@ -14,7 +14,7 @@ export default function About() {
         lede="A Somaliland-based consultancy connecting investors and exploration companies with the country’s minerals, gold and oil & gas."
         image={heroMineImg}
         imageAlt="Open-pit mine with excavators and haul trucks at golden hour."
-        position="55% 40%"
+        imageVariant="about"
         crumbs={[{ label: 'About' }]}
       />
       <AboutSection />

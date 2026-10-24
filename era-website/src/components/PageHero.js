@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 /** Light inner-page hero: text on snow-white with contour lines, optional image panel. */
-export default function PageHero({ eyebrow, title, lede, image, imageAlt = '', position = '50% 50%', crumbs = [], children }) {
+export default function PageHero({ eyebrow, title, lede, image, imageAlt = '', imageVariant, crumbs = [], children }) {
   return (
     <section className={`page-hero${image ? '' : ' page-hero--noimg'}`} aria-labelledby="page-title">
       <div className="wrap page-hero__grid">
@@ -20,8 +20,8 @@ export default function PageHero({ eyebrow, title, lede, image, imageAlt = '', p
           {children}
         </div>
         {image && (
-          <div className="page-hero__img reveal-load d3">
-            <img src={image} alt={imageAlt} style={{ objectPosition: position, objectFit: image.endsWith('.svg') ? 'contain' : 'cover', background: '#fff' }} />
+          <div className={`page-hero__img${imageVariant ? ` page-hero__img--${imageVariant}` : ''}${image.endsWith('.svg') ? ' page-hero__img--contain' : ''} reveal-load d3`}>
+            <img src={image} alt={imageAlt} />
           </div>
         )}
       </div>
