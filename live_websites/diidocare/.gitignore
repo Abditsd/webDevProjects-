@@ -1,0 +1,16 @@
+# Dependencies
+node_modules
+
+# Build output
+website-upload
+*.zip
+
+# Environment
+.env
+.env.local
+*.local
+
+# OS / editor
+.DS_Store
+.vscode
+.idea

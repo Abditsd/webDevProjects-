@@ -1,0 +1,4 @@
+{
+  "outputDirectory": "website-upload",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
