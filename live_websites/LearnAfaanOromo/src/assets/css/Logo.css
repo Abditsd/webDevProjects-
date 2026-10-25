@@ -1,0 +1,65 @@
+/* Logo.css */
+.logo-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.logo-mark {
+  flex-shrink: 0;
+  filter: drop-shadow(0 6px 12px rgba(242, 92, 5, 0.28));
+  transition: transform 0.4s var(--ease);
+}
+
+a:hover > .logo-lockup .logo-mark {
+  transform: rotate(-8deg) scale(1.05);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.logo-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.logo-name span {
+  color: var(--primary);
+}
+
+.logo-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.logo-light .logo-name {
+  color: #fff;
+}
+
+.logo-light .logo-tag {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+@media screen and (max-width: 480px) {
+  .logo-mark {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo-name {
+    font-size: 1.1rem;
+  }
+
+  .logo-tag {
+    font-size: 0.66rem;
+  }
+}

@@ -1,0 +1,49 @@
+/* About.css */
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.mv-card {
+  padding: 40px;
+}
+
+.mv-card h3 {
+  font-size: 1.6rem;
+}
+
+.mv-card p {
+  font-size: 1.05rem;
+}
+
+/* Second card inverts to the dark brand colour for contrast */
+.mv-card-dark {
+  background:
+    radial-gradient(400px 200px at 100% 100%, rgba(255, 107, 0, 0.35), transparent 70%),
+    var(--ink);
+  border-color: var(--ink);
+}
+
+.mv-card-dark h3 {
+  color: #fff;
+}
+
+.mv-card-dark p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.mv-card-dark .icon-chip {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--primary-light);
+}
+
+@media screen and (max-width: 768px) {
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mv-card {
+    padding: 28px;
+  }
+}

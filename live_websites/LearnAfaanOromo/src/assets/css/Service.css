@@ -1,0 +1,81 @@
+/* Service.css */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 24px;
+}
+
+.pathway-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.pathway-card p {
+  flex: 1;
+  margin-bottom: 24px;
+}
+
+.pathway-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.level-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background-color: var(--surface-alt);
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.topic-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 24px;
+  border-radius: var(--radius);
+}
+
+.topic-card .icon-chip {
+  width: 46px;
+  height: 46px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+}
+
+.topic-card h3 {
+  font-size: 1.05rem;
+  margin: 0 0 6px;
+}
+
+.topic-card p {
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .topics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .topics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-card {
+    padding: 20px;
+  }
+}
